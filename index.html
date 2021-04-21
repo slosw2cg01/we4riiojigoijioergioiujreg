@@ -1,52 +1,77 @@
 <!DOCTYPE HTML>
 <html lang="pl">
+
 <head>
-	<meta charset="utf-8"/>
-	<title>Andrzej Nowak - Portfolio</title>
-	<meta name="description" content="Stworze dla ciebie wyjątkowąstronę www! Zatrudnij programistę webowego: PHP, JavaScript, HTML, CSS, MySQL, WordPress, Joomla, Drupal."/>
-	<meta name="keywords" content="zamów, stronę, tworzenie, www, programista, portfolio" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />	
-	<link rel="stylesheet" href="style3.css" type="text/css" />
-	<link rel="stylesheet" href="css/mail.css" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato&amp;subset=latin-ext" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>JS innerHTML</title>
+    <script>
+        function z1() {
+            document.getElementById("z1").innerHTML = "Trzy wystarczą";
+        }
+
+        function z2() {
+            document.getElementById("z1").innerHTML = "Tu znajdziesz odpowiedź";
+        }
+
+        function z1v() {
+            document.getElementById("z1v").innerHTML = "Po kolana";
+        }
+
+        function z2v() {
+            document.getElementById("z1v").innerHTML = "Tu znajdziesz odpowiedź";
+        }
+
+        function z1v2() {
+            document.getElementById("z1v2").innerHTML = "Pojawiam się i znikam";
+        }
+
+        function z2v2() {
+            document.getElementById("z1v2").innerHTML = "Tu znajdziesz odpowiedź";
+        }
+    </script>
 </head>
 
 <body>
-	<div id="container">
-		<div class="rectangle">
-			<div id="logo">Jan Kowalski</div>
-			<div id="zegar">22:12:00</div>
-			<div style="clear:both;"></div>
-		</div>
-			<div class="square">
-				<div class="tile1">1</div>
-				<div class="tile1">1</div>
-				<div style="clear:both;"></div>
-				
-				<div class="tile2">2</div>
-				<div class="tile3">3</div>
-				<div style="clear:both;"></div>
-				<div class="tile4">4</div>
-			
-			</div>
-			<div class="square">
-				<div class="tile5">5</div>
-				<div id="yt"><i class="icon-youtube"></i> 
-				</div>
-				<div id="fb">fb</div>
-				<div id="gplus">gplus</div>
-				<div id="tw">tw</div>
-				<div style="clear:both;"></div>
-			</div>
-			<div style="clear: both;"></div>
-			
-			<div class="rectangle">2018r &copy; Jan Kowalski - Portfolio. Programista webowy zaprasza do współpracy! jan.kowalski@adress.com</div>
-		
-		
-	</div>
+    <h2>JS posługiwanie się innerHTML</h2>
+    <h3>Zagadki logiczne:</h3>
+
+
+    <p>
+        Po co robić pięć zagadek?
+    </p>
+    <input type="button" value="zobacz odpowiedź" onclick="z1()">
+    </br>
+    </br>
+    <div id="z1">Tu znajdziesz odpowiedź</div>
+    </br>
+    </br>
+    <input type="button" value="ukryj odpowiedź" onclick="z2()">
+
+
+
+    <p>
+        Po co żołnierz ma płaszcz?
+    </p>
+    <input type="button" value="zobacz odpowiedź" onclick="z1v()">
+    </br>
+    </br>
+    <div id="z1v">Tu znajdziesz odpowiedź</div>
+    </br>
+    </br>
+    <input type="button" value="ukryj odpowiedź" onclick="z2v()">
+
+
+
+    <p>
+        Co mówi murzyn na pasach?
+    </p>
+    <input type="button" value="zobacz odpowiedź" onclick="z1v2()">
+    </br>
+    </br>
+    <div id="z1v2">Tu znajdziesz odpowiedź</div>
+    </br>
+    </br>
+    <input type="button" value="ukryj " onclick="z2v2()">
+
 
 </body>
-
-
-
-</html>
